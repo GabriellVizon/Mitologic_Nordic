@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitologia Nórdica - Sagas Eternas de Yggdrasil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mitologia Nórdica <span class="rune">&#5842;&#5845;&#5846;&#5848;&#5847;&#5849;</span></h1>
+            <p>As Sagas Antigas dos Deuses, Gigantes, Criaturas e o Destino Cósmico</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introdução</a></li>
+                <li><a href="#deuses">Deuses</a></li>
+                <li><a href="#mitos">Mitos</a></li>
+                <li><a href="#mundos">Nove Mundos</a></li>
+                <li><a href="#criaturas">Criaturas</a></li>
+                <li><a href="#artefatos">Artefatos</a></li>
+                <li><a href="#runas">Runas e Magia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Bem-vindo aos Reinos Eternos de Asgard</h2>
+            <p>A mitologia nórdica, compilada nos Eddas Poéticos e em Prosa por Snorri Sturluson no século XIII, e nas sagas islandesas, descreve o nascimento do cosmos do abismo primordial Ginnungagap, onde gelo de Niflheim e fogo de Muspelheim se encontram. Os deuses Aesir (como Odin e Thor) e Vanir (como Freyja e Freyr) representam ordem, guerra e fertilidade, enquanto Jotuns simbolizam o caos primordial. O destino, tecido pelas Nornas (Urd, Verdandi e Skuld) no poço Urdarbrunnr, culmina no Ragnarök – uma batalha apocalíptica de destruição e renascimento. Essas lendas influenciaram a literatura moderna, como Tolkien, e refletem valores vikings de honra, coragem e aceitação do destino inevitável (wyrd).</p>
+            <img src="https://c8.alamy.com/comp/2B2B6P4/drawing-of-three-viking-ships-leaving-a-fjord-2B2B6P4.jpg" alt="Ilustração de navios vikings navegando pelos fiordes" class="intro-img">
+        </section>
+
+        <section id="deuses">
+            <h2>Deuses dos Aesir e Vanir</h2>
+            <p>Os deuses nórdicos são divididos em Aesir (guerra e sabedoria) e Vanir (fertilidade e natureza), unidos após uma guerra. Eles não são imortais, mas sustentados pelas maçãs de Idunn, e enfrentam o destino no Ragnarök.</p>
+            <div class="deuses-grid">
+                <div class="deus-card">
+                    <img src="IMG/odin.jpg" alt="Ilustração autêntica de Odin">
+                    <h3>Odin</h3>
+                    <p>O Todo-Pai, deus da sabedoria, guerra, poesia e magia. Sacrificou um olho no Poço de Mimir por conhecimento profético e pendurou-se na Yggdrasil por nove noites para aprender as 24 runas do Futhark Antigo.</p>
+                    <button class="modal-btn" data-modal="odin-modal">Mais Detalhes</button>
+                </div>
+                <div class="deus-card">
+                    <img src="IMG/thor.webp" alt="Ilustração autêntica de Thor com Mjölnir">
+                    <h3>Thor</h3>
+                    <p>O deus do trovão, força e proteção. Filho de Odin e Jörd (a Terra), empunha Mjölnir para defender Midgard dos gigantes, e é o mais popular entre os vikings por sua bravura acessível.</p>
+                    <button class="modal-btn" data-modal="thor-modal">Mais Detalhes</button>
+                </div>
+                <div class="deus-card">
+                    <img src="IMG/Loki.jpg" alt="Ilustração autêntica de Loki">
+                    <h3>Loki</h3>
+                    <p>O trapaceiro shape-shifter, causador de caos e pai de monstros. Apesar de sua malícia, sua astúcia ajudou os deuses, como na construção de Asgard.</p>
+                    <button class="modal-btn" data-modal="loki-modal">Mais Detalhes</button>
+                </div>
+                <div class="deus-card">
+                    <img src="https://paganheim.com/cdn/shop/articles/norse-mythology-hildisvini-freyja.jpg?crop=center&height=1200&v=1723532032&width=1200" alt="Ilustração autêntica de Freyja">
+                    <h3>Freyja</h3>
+                    <p>Deusa do amor, fertilidade, guerra e seidr (magia). Dona de Brísingamen e líder das Valquírias, divide os guerreiros caídos com Odin.</p>
+                    <button class="modal-btn" data-modal="freyja-modal">Mais Detalhes</button>
+                </div>
+                <div class="deus-card">
+                    <img src="IMG/Tyr.jpg" alt="Ilustração autêntica de Tyr" class="tyrimg">
+                    <h3>Tyr</h3>
+                    <p>Deus da justiça, coragem e lei. Perdeu a mão para Fenrir, simbolizando sacrifício pela ordem.</p>
+                    <button class="modal-btn" data-modal="tyr-modal">Mais Detalhes</button>
+                </div>
+                <div class="deus-card">
+                  <img src="IMG/baldur.jfif" alt="Ilustração autêntica de Balder">
+                    <h3>Balder</h3>
+                    <p>Deus da luz, beleza e pureza. Sua morte por Loki inicia a cadeia para o Ragnarök.</p>
+                    <button class="modal-btn" data-modal="balder-modal">Mais Detalhes</button>
+                </div>
+                <div class="deus-card">
+                  <img src="IMG/Frigg.webp" alt="Ilustração autêntica de Frigg">
+                    <h3>Frigg</h3>
+                    <p>Rainha de Asgard, deusa do casamento e profecia. Conhece todos os destinos, mas os guarda em silêncio.</p>
+                    <button class="modal-btn" data-modal="frigg-modal">Mais Detalhes</button>
+                </div>
+                <div class="deus-card">
+                  <img src="IMG/Freyr.jpg" alt="Ilustração autêntica de Freyr">
+                    <h3>Freyr</h3>
+                    <p>Deus Vanir da fertilidade, prosperidade e paz. Dona o barco Skidbladnir e o javali Gullinbursti.</p>
+                    <button class="modal-btn" data-modal="freyr-modal">Mais Detalhes</button>
+                </div>
+            </div>
+        </section>
+<!--   MITOS E LENDAS "RAGNAROK" -->
+        <section id="mitos">
+            <h2>Mitos e Lendas Épicas</h2>
+            <p>Os mitos nórdicos, preservados oralmente até o século XIII, enfatizam ciclos de criação, conflito e renovação, refletindo a visão viking do mundo como transitório.</p>
+            <ul>
+                <li>
+                    <strong>A Criação do Cosmos:</strong> Do corpo de Ymir, os deuses moldam o mundo: ossos viram montanhas, dentes rochas, cabelo árvores.
+                </li>
+                <li>
+                    <strong>Ragnarök:</strong> Inicia com Fimbulwinter (inverno de três anos), seguido por batalhas onde Odin é devorado por Fenrir, Thor mata Jormungandr mas sucumbe ao veneno.
+                    <img src="https://www.ancient-origins.net/sites/default/files/styles/article_image/public/field/image/Equals-Doom-or-Twilight-for-Norse-Gods.jpg?itok=9deAhx8E" alt="Cena da batalha do Ragnarök" class="mito-img">
+                </li>
+                <li>
+                    <strong>A Queda de Balder:</strong> Frigg obtém juramentos de imunidade, mas Loki usa visgo; Hermod tenta resgatá-lo de Hel.
+                </li>
+                <li>
+                    <strong>A Jornada de Thor a Utgard:</strong> Ilusões revelam a força de Thor: bebe o mar, levanta a serpente como gato.
+                </li>
+                <li>
+                    <strong>A Guerra Aesir-Vanir:</strong> Termina com troca de reféns, integrando magia Vanir aos Aesir.
+                </li>
+                <li>
+                    <strong>O Roubo das Maçãs de Idunn:</strong> Loki resgata Idunn dos gigantes, preservando a juventude dos deuses.
+                </li>
+            </ul>
+        </section>
+<!-- NOVE MUNDOS DA MITOLOGIA -->
+        <section id="mundos">
+            <h2>Os Nove Mundos de Yggdrasil</h2>
+            <p>Yggdrasil, a freixo cósmica, é habitada por criaturas como a águia Vedrfolnir, o falcão no topo, e o esquilo Ratatoskr que leva insultos entre Nidhogg e a águia.</p>
+            <img src="/IMG/9 mundos.webp" alt="Ilustração de Yggdrasil, a árvore do mundo" class="mundos-img">
+
+
+            <ol>
+                <li><strong>Asgard:</strong> Com Gladsheim e Valaskjalf, lar de Valhalla onde einherjar se preparam.</li>
+                <li><strong>Midgard:</strong> Criado para humanos Ask e Embla, protegido por Thor.</li>
+                <li><strong>Vanaheim:</strong> Reino de Njörd, Freyr e Freyja, foco em agricultura.</li>
+                <li><strong>Jotunheim:</strong> Lar de Utgard, repleto de montanhas e gigantes.</li>
+                <li><strong>Alfheim:</strong> Mundo etéreo dos elfos da luz, aliados dos Vanir.</li>
+                <li><strong>Svartalfheim:</strong> Forjas subterrâneas dos anões, criadores de Mjölnir.</li>
+                <li><strong>Niflheim:</strong> Fonte do rio Elivagar, reino de gelo primordial.</li>
+                <li><strong>Muspelheim:</strong> Governado por Surt, que incendiará Yggdrasil.</li>
+                <li><strong>Helheim:</strong> Para os doentes e idosos, cruzado pelo rio Gjoll.</li>
+            </ol>
+        </section>
+
+        <section id="criaturas">
+            <h2>Criaturas Míticas e Monstros</h2>
+            <p>A mitologia nórdica é rica em seres mágicos, de animais simbólicos a monstros profetizados, muitos descendentes de Loki ou gigantes.</p>
+            <div class="criaturas-grid">
+                <div class="criatura-card">
+                  <img src="IMG/Fenrir.webp" alt="#" class="Fenrir-image">
+                    <h3>Fenrir</h3>
+                    <p>Lobo gigante que quebra correntes mágicas; Vidar o mata no Ragnarök.</p>
+                    <button class="modal-btn" data-modal="fenrir-modal">Mais Detalhes</button>
+                </div>
+                <div class="criatura-card">
+                  <img src="IMG/Jormungandr.webp" alt="#" class="Jormungandr-image">
+                    <h3>Jormungandr</h3>
+                    <p>Serpente que circunda o mundo; batalha mútua com Thor.</p>
+                    <button class="modal-btn" data-modal="jormungandr-modal">Mais Detalhes</button>
+                </div>
+                <div class="criatura-card">
+                    <img src="IMG/Nidhogg.webp" alt="" class="Nidhogg-image">
+                    <h3>Nidhogg</h3>
+                    <p>Dragão que rói raízes e come almas dos perjuros.</p>
+                    <button class="modal-btn" data-modal="nidhogg-modal">Mais Detalhes</button>
+                </div>
+                <div class="criatura-card">
+                     <img src="IMG/sleiapnir.png" alt="" class="Sleipnir-image">
+                    <h3>Sleipnir</h3>
+                    <p>Cavalo de oito patas, filho de Loki e Svadilfari.</p>
+                    <button class="modal-btn" data-modal="sleipnir-modal">Mais Detalhes</button>
+                </div>
+                <div class="criatura-card">
+                    <img src="IMG/Valquirias.jpg" alt="" class="Valquias-image">
+                    <h3>Valquírias</h3>
+                    <p>Guerreiras que escolhem os caídos; servem hidromel em Valhalla.</p>
+                    <button class="modal-btn" data-modal="valquirias-modal">Mais Detalhes</button>
+                </div>
+                <div class="criatura-card">
+                    <img src="IMG/HUGGIN.webp" alt="" class="huggin-image">
+                    <h3>Huginn e Muninn</h3>
+                    <p>Corvos de Odin que voam pelo mundo coletando notícias.</p>
+                    <button class="modal-btn" data-modal="huginn-muninn-modal">Mais Detalhes</button>
+                </div>
+                <div class="criatura-card">
+                    <img src="IMG/Gullinbursti.jpg" alt="" class="Gullinbursti-image">
+                    <h3>Gullinbursti</h3>
+                    <p>Javali dourado de Freyr, mais rápido que cavalos.</p>
+                    <button class="modal-btn" data-modal="gullinbursti-modal">Mais Detalhes</button>
+                </div>
+                <div class="criatura-card">
+                    <img src="IMG/Draugr.png" alt="" class="Draugr-image">
+                    <h3>Draugr</h3>
+                    <p>Mortos-vivos guardiões de túmulos, com força sobre-humana.</p>
+                    <button class="modal-btn" data-modal="draugr-modal">Mais Detalhes</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="artefatos">
+            <h2>Artefatos Lendários e Relíquias</h2>
+            <p>Forjados por anões ou deuses, esses itens possuem poderes mágicos e são centrais em muitas sagas.</p>
+            <ul>
+                <li><strong>Mjölnir:</strong> Martelo de Thor que retorna, abençoa e destrói.</li>
+                <li><strong>Gungnir:</strong> Lança de Odin que nunca erra, usada em juramentos.</li>
+                <li><strong>Draupnir:</strong> Anel que gera oito iguais a cada nove noites.</li>
+                <li><strong>Brísingamen:</strong> Colar de Freyja, símbolo de desejo e beleza.</li>
+                <li><strong>Gleipnir:</strong> Corrente de Fenrir, feita de sons impossíveis.</li>
+                <li><strong>Skidbladnir:</strong> Barco de Freyr que se dobra como lenço.</li>
+                <li><strong>Gjallarhorn:</strong> Chifre de Heimdall que anuncia o Ragnarök.</li>
+            </ul>
+        </section>
+
+        <section id="runas">
+            <h2>Runas e a Magia Seidr</h2>
+            <p>As runas do Futhark Antigo (24 símbolos) eram usadas para adivinhação, proteção e magia. O seidr, praticado por Freyja e Odin, envolvia transe para profecias e maldições.</p>
+            <div class="runas-grid">
+                <div class="runa-card">
+                    <span class="rune-symbol">&#5842;</span>
+                    <p>Tiwaz: Justiça, vitória em batalhas, associada a Tyr.</p>
+                </div>
+                <div class="runa-card">
+                    <span class="rune-symbol">&#5845;</span>
+                    <p>Uruz: Força vital, saúde, como a força de Thor.</p>
+                </div>
+                <div class="runa-card">
+                    <span class="rune-symbol">&#5846;</span>
+                    <p>Thurisaz: Proteção contra inimigos, espinho dos gigantes.</p>
+                </div>
+                <div class="runa-card">
+                    <span class="rune-symbol">&#5847;</span>
+                    <p>Ansuz: Comunicação divina, inspiração de Odin.</p>
+                </div>
+                <div class="runa-card">
+                    <span class="rune-symbol">&#5848;</span>
+                    <p>Raido: Jornada, viagens seguras como as de Thor.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals para mais detalhes -->
+    <div id="odin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Odin - O Todo-Pai</h3>
+            <p>Odin, conhecido como Wotan em germânico, é o deus supremo dos Aesir. Ele vaga disfarçado como viajante para ganhar conhecimento, e é associado à fúria berserker em batalhas. Seus corvos Huginn (pensamento) e Muninn (memória) representam sua busca incessante por sabedoria. No Ragnarök, é devorado por Fenrir, mas Vidar vinga-o. Odin também pratica seidr, magia tradicionalmente feminina, mostrando sua complexidade de gênero nos mitos.</p>
+        </div>
+    </div>
+
+    <div id="thor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Thor - O Trovão</h3>
+            <p>Thor é o protetor dos humanos, frequentemente viajando para Jotunheim para caçar gigantes. Suas cabras Tanngrisnir e Tanngnjóstr podem ser comidas e ressuscitadas, simbolizando provisão eterna. Em sagas como Thrymskvida, ele se disfarça de Freyja para recuperar Mjölnir. Thor representa a força bruta contrastando com a astúcia de Odin, e é invocado em amuletos vikings para proteção.</p>
+        </div>
+    </div>
+
+    <div id="loki-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Loki - O Trapaceiro</h3>
+            <p>Loki, filho de gigantes, é ambíguo: ajuda os deuses (como forjando itens com anões) mas causa desastres (morte de Balder). Ele gera Sleipnir ao se transformar em égua, e no Ragnarök lidera o navio Naglfar feito de unhas dos mortos. Sua punição por Balder é ser amarrado com entranhas de seu filho, com veneno gotejando em seu rosto.</p>
+        </div>
+    </div>
+
+    <div id="freyja-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Freyja - A Senhora</h3>
+            <p>Freyja, "Senhora", é mestra do seidr e chora lágrimas de ouro por Odr. Seu carro de gatos e manto de falcão permitem voo. Como Vanir, trouxe fertilidade aos Aesir após a guerra. Freyja é associada à sexualidade livre, contrastando com Frigg.</p>
+        </div>
+    </div>
+
+    <div id="tyr-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tyr - O Justo</h3>
+            <p>Tyr, possivelmente um deus antigo supremo, é invocado em runas para vitória legal. Sua perda de mão para Fenrir enfatiza honra sobre autopreservação. No Ragnarök, luta contra Garm, o cão infernal.</p>
+        </div>
+    </div>
+
+    <div id="balder-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Balder - O Luminoso</h3>
+            <p>Balder, filho de Odin e Frigg, é o mais belo deus. Sua morte causa luto universal; tentativas de resgate falham por Thokk (Loki disfarçado). Renasce no mundo pós-Ragnarök com Hodr.</p>
+        </div>
+    </div>
+
+    <div id="frigg-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Frigg - A Rainha</h3>
+            <p>Frigg, "Amada", tece nuvens em seu tear e sabe o futuro. Sua dor por Balder faz a terra tremer. Associada a tecelagem e família, é patrona das mães.</p>
+        </div>
+    </div>
+
+    <div id="freyr-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Freyr - O Fértil</h3>
+            <p>Freyr sacrifica sua espada por Gerd, tornando-o vulnerável no Ragnarök contra Surt. Seu javali Gullinbursti ilumina a noite, simbolizando prosperidade agrícola.</p>
+        </div>
+    </div>
+
+    <div id="heimdall-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Heimdall - O Guardião</h3>
+            <p>Heimdall precisa de menos sono que um pássaro e ouve grama crescer. Filho de nove mães (ondas), sopra Gjallarhorn para alertar os deuses.</p>
+        </div>
+    </div>
+
+    <div id="fenrir-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Fenrir - O Lobo</h3>
+            <p>Fenrir, profetizado para matar Odin, é criado em Asgard mas acorrentado após morder Tyr. Sua prole inclui Skoll e Hati, caçadores do sol e lua.</p>
+        </div>
+    </div>
+
+    <div id="jormungandr-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Jormungandr - A Serpente</h3>
+            <p>Jogada no oceano por Odin, cresce para circundar Midgard. Sua mordida no Ragnarök mata Thor nove passos após.</p>
+        </div>
+    </div>
+
+    <div id="nidhogg-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Nidhogg - O Devorador</h3>
+            <p>Nidhogg rói Yggdrasil e insulta via Ratatoskr. Sobrevive ao Ragnarök para carregar corpos no novo mundo.</p>
+        </div>
+    </div>
+
+    <div id="sleipnir-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Sleipnir - O Corredor</h3>
+            <p>Melhor cavalo, viaja entre mundos. Gerado por Loki para atrasar a construção de Asgard.</p>
+        </div>
+    </div>
+
+    <div id="valquirias-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Valquírias - As Escolhedoras</h3>
+            <p>Valquírias como Brynhildr tecem destinos com entranhas. Escolhem quem vive ou morre em batalha para Valhalla ou Folkvangr.</p>
+        </div>
+    </div>
+
+    <div id="huginn-muninn-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Huginn e Muninn - Pensamento e Memória</h3>
+            <p>Voam diariamente; Odin teme mais a perda de Muninn, simbolizando medo do esquecimento.</p>
+        </div>
+    </div>
+
+    <div id="gullinbursti-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Gullinbursti - Cerdas Douradas</h3>
+            <p>Forjado pelos anões, puxa a carruagem de Freyr e brilha no escuro.</p>
+        </div>
+    </div>
+
+    <div id="draugr-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Draugr - Os Mortos-Vivos</h3>
+            <p>Guardiões de tesouros, mudam de tamanho e exalam fedor. Combatidos por heróis como Grettir.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Sagas da Mitologia Nórdica. Runas eternas tecem o destino: ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
