@@ -109,13 +109,13 @@ h2 {
     text-shadow: 2px 2px 5px #000;
 }
 
-.deuses-grid, .criaturas-grid, .runas-grid {
+.deuses-grid, .criaturas-grid, .runas-grid, .artefatos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
 }
 
-.deus-card, .criatura-card, .runa-card {
+.deus-card, .criatura-card, .runa-card, .artefatos-card {
     background: linear-gradient(to bottom, rgba(50, 50, 50, 0.95), rgba(30, 30, 30, 0.95));
     padding: 25px;
     border: 3px solid #d4af37;
@@ -123,7 +123,7 @@ h2 {
     transition: transform 0.4s, box-shadow 0.4s;
 }
 
-.deus-card:hover, .criatura-card:hover, .runa-card:hover {
+.deus-card:hover, .criatura-card:hover, .runa-card:hover, .artefatos-card:hover {
     transform: translateY(-15px);
     box-shadow: 0 15px 30px rgba(212, 175, 55, 0.6);
 }
@@ -147,6 +147,24 @@ h2 {
     transition: background-color 0.3s;
     border-radius: 5px;
 
+}
+
+a {
+    text-decoration: none;
+}
+
+.botao21 {
+    display: block;        /* Faz ocupar a linha inteira */
+    margin: 20px auto;     /* Centraliza horizontalmente */
+    padding: 10px 25px;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
 .modal-btn:hover {
@@ -209,6 +227,7 @@ footer {
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
 }
+
 
 
 .modal-content {
@@ -281,3 +300,47 @@ footer {
     width: auto;
     height: auto;
 }
+
+.Mjornir, .Gungnir-img, .Draupnir-img, .Brísingamen, .Gleipnir, .Skidbladnir, .Gjallarhorn, .Laevateinn{
+    width: 250px;
+    height: 250px;
+}
+
+
+.hotspot {
+    position: absolute;
+    z-index: 9999; /* AGORA FICA CLICÁVEL */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 65px;
+    height: 30px;
+    transform: none;
+    background: rgba(0, 0, 0, 0.0); 
+}
+
+.hotspot:hover {
+    background: rgba(212,175,55,0.12);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+
+
+    /* wrapper para imagem do mapa */
+    .map-wrap {
+        position: relative;
+        width: 500px;                /* corresponde ao (.mundos-img width:500px) */
+        margin: 25px auto;
+    }
+    .map-wrap img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border: 2px solid #b8932e;
+    }
+
+    @media (max-width: 520px) {
+        .map-wrap { width: 92%; }
+    }

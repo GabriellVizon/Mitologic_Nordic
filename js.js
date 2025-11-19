@@ -1,45 +1,57 @@
-// script.js - Mais JS para modals, scroll suave e animações
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Modals
-    const modalBtns = document.querySelectorAll('.modal-btn');
-    const modals = document.querySelectorAll('.modal');
-    const closeBtns = document.querySelectorAll('.close');
 
-    modalBtns.forEach(btn => {
+    // Abre o modal correspondente SEM ACUMULAR CLIQUES ANTIGOS
+    document.querySelectorAll('[data-modal]').forEach(btn => {
         btn.addEventListener('click', () => {
+
+            // Fecha todos antes de abrir o novo
+            document.querySelectorAll('.modal').forEach(m => {
+                m.style.display = "none";
+            });
+
             const modalId = btn.getAttribute('data-modal');
             const modal = document.getElementById(modalId);
-            modal.style.display = 'block';
+
+            if (modal) modal.style.display = "block";
         });
     });
 
-    closeBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            btn.parentElement.parentElement.style.display = 'none';
+    // Fecha pelo X
+    document.querySelectorAll('.modal .close').forEach(close => {
+        close.addEventListener('click', () => {
+            close.closest('.modal').style.display = "none";
         });
     });
 
-    window.addEventListener('click', (event) => {
-        modals.forEach(modal => {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
+    // Fecha ao clicar fora da caixa
+    window.addEventListener('click', (e) => {
+        if (e.target.classList.contains('modal')) {
+            e.target.style.display = "none";
+        }
     });
 
-    // Scroll suave para âncoras
+    // Fecha todos pelo ESC
+    window.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") {
+            document.querySelectorAll('.modal').forEach(m => m.style.display = "none");
+        }
+    });
+
+
+    /* ===========================
+        SCROLL SUAVE
+    ============================*/
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
+            target.scrollIntoView({ behavior: 'smooth' });
         });
     });
 
-    // Animação extra: Highlight no hover para cards
+    /* ===========================
+        HOVER CARDS (EFEITO)
+    ============================*/
     const cards = document.querySelectorAll('.deus-card, .criatura-card, .runa-card');
     cards.forEach(card => {
         card.addEventListener('mouseenter', () => {
@@ -49,4 +61,5 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.borderColor = '#d4af37';
         });
     });
+
 });
