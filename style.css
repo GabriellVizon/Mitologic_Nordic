@@ -341,6 +341,51 @@ footer {
         border: 2px solid #b8932e;
     }
 
-    @media (max-width: 520px) {
+    .runas-grid h2{
+        grid-column: 1 / -1;
+    }
+
+
+    /*FODASE DESISTI */
+
+    @media (max-width: 1200px) {
+    .deuses-grid,
+    .criaturas-grid,
+    .artefatos-grid,
+    .runas-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+    
+    @media (max-width: 768px) {
         .map-wrap { width: 92%; }
+        header {
+            padding: 1rem;
+        }
+        .deus-card,
+        .criatura-card,
+        .artefatos-card,
+        .runa-card {
+        max-width: 380px;
+        margin: 0 auto;
+        }
+        .deus-card ,
+        .criatura-card 
+
+        .deuses-grid,
+        .criaturas-grid,
+        .artefatos-grid,
+        .runas-grid {
+        grid-template-columns: 1fr;
+        }
+        
+        nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        }
+
+        nav ul li a {
+        font-size: 1.1rem;
+        }
     }
