@@ -322,7 +322,7 @@ footer {
 }
 
 .hotspot:hover {
-    background: rgba(212,175,55,0.12);
+    background: rgba(212,175,55,0.1);
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
@@ -331,6 +331,7 @@ footer {
     /* wrapper para imagem do mapa */
     .map-wrap {
         position: relative;
+        z-index: 1;
         width: 500px;                /* corresponde ao (.mundos-img width:500px) */
         margin: 25px auto;
     }
